@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="#F7F7F7">
+        <ImageView
+            android:layout_width="fill_parent"
+            android:src="@drawable/fondo_portada"
+            android:scaleType="centerCrop"
+            android:layout_height="fill_parent"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="fill_parent"
+                android:text="@string/app_name"
+                android:textSize="40dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/blanco"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:text="@string/portada_bienvenido"
+                android:background="@color/fondo_negro_transparente"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@color/fondo_verde">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/blanco">
+                <GridView
+                    android:numColumns="3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:id="@+id/grid"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:background="@color/fondo_verde">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/logo_horizontal"
+
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
